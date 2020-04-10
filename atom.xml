@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://shxiangyan.github.io/</id>
+    <title>Shxiangyan&apos;s Home</title>
+    <updated>2020-04-10T01:51:01.024Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://shxiangyan.github.io/"/>
+    <link rel="self" href="https://shxiangyan.github.io/atom.xml"/>
+    <subtitle>shxiangyan@gmail.com</subtitle>
+    <logo>https://shxiangyan.github.io/images/avatar.png</logo>
+    <icon>https://shxiangyan.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, Shxiangyan&apos;s Home</rights>
+    <entry>
+        <title type="html"><![CDATA[123]]></title>
+        <id>https://shxiangyan.github.io/post/123/</id>
+        <link href="https://shxiangyan.github.io/post/123/">
+        </link>
+        <updated>2020-04-10T01:33:09.000Z</updated>
+        <content type="html"><![CDATA[<p>test</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bandicam]]></title>
+        <id>https://shxiangyan.github.io/post/bandicam/</id>
+        <link href="https://shxiangyan.github.io/post/bandicam/">
+        </link>
+        <updated>2020-04-01T12:20:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>👉老师您要的录屏软件<br>
+👉👇</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👉老师您要的录屏软件<br>
+👉👇</p>
+<!-- more -->
+<h2 id="1双击bdcamsetupexe">1.双击bdcamsetup.exe</h2>
+<h2 id="2点击下一步">2.点击下一步</h2>
+<h2 id="3可以看到现在是未注册版">3.可以看到现在是未注册版</h2>
+<h2 id="4再次打开之前解压的文件夹以管理员身份运行注册机">4.再次打开之前解压的文件夹，以管理员身份运行注册机</h2>
+<h2 id="5在此随意输入一个邮箱即可">5.在此随意输入一个邮箱即可</h2>
+<h2 id="6输入完毕点击-register-application">6.输入完毕点击 Register application！</h2>
+<h2 id="7重启软件就会发现已经注册成功了">7.重启软件就会发现已经注册成功了</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[华为开发者会议]]></title>
+        <id>https://shxiangyan.github.io/post/huawei/</id>
+        <link href="https://shxiangyan.github.io/post/huawei/">
+        </link>
+        <updated>2020-03-31T04:06:44.000Z</updated>
+        <summary type="html"><![CDATA[<p>👉<br>
+👇</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👉<br>
+👇</p>
+<!-- more -->
+<h1 id="1三大挑战">1.三大挑战</h1>
+<h2 id="11数据">1.1数据</h2>
+<p>如何海量数据挖掘有效信息?</p>
+<h3 id="111-利用生成数据训练模型">1.1.1 利用生成数据训练模型</h3>
+<p>为了解决数据标注瓶颈的关键技术.生成数据主要应用于智慧城市,智能驾驶.</p>
+<ol>
+<li>
+<p>自动数据扩充</p>
+</li>
+<li>
+<p>利用GAN模型来生成更多的数据</p>
+</li>
+<li>
+<p>利用计算机图形学技术生成虚拟数据</p>
+</li>
+</ol>
+<p>问题:单一的数据硬标签让数据自动扩充以后的图像不能完美的识别.</p>
+<p>解决方法:知识蒸馏与数据扩充相结合:通过预训练模型对数据扩增的图片产生软标签,用软标签指导模型训练.</p>
+<h3 id="112-对齐不同模态的数据">1.1.2 对齐不同模态的数据</h3>
+<p>主要应用于,智能驾驶,智能多媒体</p>
+<p>挑战:</p>
+<ul>
+<li>多模态信息表示</li>
+<li>模态联合映射</li>
+<li>模态对齐</li>
+<li>模态融合</li>
+<li>多模态协同融合</li>
+</ul>
+<p>根据文本\图像信息以及用户的数据建立多模态的查询语句.</p>
+<h2 id="12-模型">1.2 模型</h2>
+<h3 id="121-设计">1.2.1 设计</h3>
+<p>用自动网络搜索代替手工网络设计.</p>
+<p>挑战:</p>
+<ul>
+<li>搜索空间(人工经验来定义)</li>
+<li>搜索算子(人工设计)</li>
+<li>迁移性差</li>
+</ul>
+<p>PC-DARTS:局部连接的思路,解决网络冗余问题边正则化思想,解决局部连接带来的不稳定性.</p>
+<h3 id="122-加速">1.2.2 加速</h3>
+<p>挑战:</p>
+<ul>
+<li>云测大模型无法适配段侧的有限算力</li>
+</ul>
+<p>加法网络:新型算子加速卷积网络.使用曼哈顿距离取代欧式,卷积无需乘法计算,使用8比特整数计算,对硬件更加友好,功耗更低.公式如下:</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>)</mo><mo>=</mo><mi mathvariant="normal">∣</mi><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>x</mi><mn>2</mn></msub><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><msub><mi>y</mi><mn>1</mn></msub><mo>−</mo><msub><mi>y</mi><mn>2</mn></msub><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">d(i,j)=|x_1-x_2|+|y_1-y_2|
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span></span></span></p>
+<h2 id="13-知识">1.3 知识</h2>
+<h3 id="131-定义视觉与训练模型">1.3.1 定义视觉与训练模型</h3>
+<p>挑战:</p>
+<ul>
+<li>监督学习需要海量的样本,数据拟合无法泛华到不同的数据.</li>
+<li>强化学习需要海量的xx缺少可重复性,可复用性,鲁棒性.</li>
+<li>自监督学习缺乏有效的预训练任务</li>
+</ul>
+<p>拼图任务改进自监督模型,使网络能够处理任意拼图布局从而更好地学习空间上下文提供的语义信息.</p>
+<h3 id="132-通过虚拟环境更精确的学习知识">1.3.2 通过虚拟环境更精确的学习知识</h3>
+<h1 id="2-mindspore计算框架开源">2 MindSpore计算框架开源</h1>
+<ul>
+<li>混合并行</li>
+<li>云\边\端合一</li>
+<li>兼顾学术工业</li>
+<li>自动微分,并行计算,调优</li>
+</ul>
+<h1 id="3-modelarts-pro">3 ModelArts Pro</h1>
+<p>从计算到认知的过程</p>
+<p>生成API简单调用.</p>
+<h1 id="4-hilens">4 HiLens</h1>
+<p>端云协同多模态AI应用开发套件.</p>
+<h1 id="5-atlas">5 Atlas</h1>
+<p>检测工具.</p>
+<p>分布式云计算:</p>
+<ul>
+<li>计算瓶颈</li>
+<li>I/O瓶颈</li>
+<li>内存瓶颈</li>
+</ul>
+<h1 id="名词">名词</h1>
+<p>AA  自动数据扩增,对数据集的全局优化,容易带来图片语义的混淆.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[第五周]]></title>
+        <id>https://shxiangyan.github.io/post/di-wu-zhou/</id>
+        <link href="https://shxiangyan.github.io/post/di-wu-zhou/">
+        </link>
+        <updated>2020-03-30T09:19:32.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="1取得成果">1.取得成果</h1>
+<figure data-type="image" tabindex="1"><img src="https://shxiangyan.github.io//post-images/1585560783488.png" alt="" loading="lazy"></figure>
+<p>构建了数据分别在，VGG16、InceptionV3、ResNeXt50，Xception进行训练在Xception上表现最好，得到了可观的数据。</p>
+<h1 id="2stk添加卫星保存场景">2.STK添加卫星保存场景</h1>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[first]]></title>
+        <id>https://shxiangyan.github.io/post/first/</id>
+        <link href="https://shxiangyan.github.io/post/first/">
+        </link>
+        <updated>2020-03-29T11:23:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>123<br>
+jiofwe</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>123<br>
+jiofwe</p>
+<!-- more -->
+<p>fwehfiowej<br>
+fjeiwhfe<br>
+jefiojwoei<br>
+fneif</p>
+]]></content>
+    </entry>
+</feed>
