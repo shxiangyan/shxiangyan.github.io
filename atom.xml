@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shxiangyan.github.io/</id>
     <title>Shxiangyan&apos;s Home</title>
-    <updated>2020-04-10T13:20:53.663Z</updated>
+    <updated>2020-04-10T13:58:25.956Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shxiangyan.github.io/"/>
     <link rel="self" href="https://shxiangyan.github.io/atom.xml"/>
@@ -144,7 +144,7 @@
 </tr>
 <tr>
 <td style="text-align:center">机械硬盘</td>
-<td style="text-align:center">希捷BarraCuda 4TB 5900转 256MB（ST4000DM004）</td>
+<td style="text-align:center">希捷BarraCuda Pro 4TB 7200转 128MB</td>
 <td style="text-align:center">1</td>
 <td style="text-align:center">649</td>
 </tr>
@@ -158,19 +158,10 @@
 <td style="text-align:center">-</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">总金</td>
-<td style="text-align:center">30247</td>
+<td style="text-align:center">30997</td>
 </tr>
 </tbody>
 </table>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[123]]></title>
-        <id>https://shxiangyan.github.io/post/123/</id>
-        <link href="https://shxiangyan.github.io/post/123/">
-        </link>
-        <updated>2020-04-10T01:33:09.000Z</updated>
-        <content type="html"><![CDATA[<p>test</p>
 ]]></content>
     </entry>
     <entry>
@@ -297,24 +288,6 @@
 <figure data-type="image" tabindex="1"><img src="https://shxiangyan.github.io//post-images/1585560783488.png" alt="" loading="lazy"></figure>
 <p>构建了数据分别在，VGG16、InceptionV3、ResNeXt50，Xception进行训练在Xception上表现最好，得到了可观的数据。</p>
 <h1 id="2stk添加卫星保存场景">2.STK添加卫星保存场景</h1>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[first]]></title>
-        <id>https://shxiangyan.github.io/post/first/</id>
-        <link href="https://shxiangyan.github.io/post/first/">
-        </link>
-        <updated>2020-03-29T11:23:43.000Z</updated>
-        <summary type="html"><![CDATA[<p>123<br>
-jiofwe</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>123<br>
-jiofwe</p>
-<!-- more -->
-<p>fwehfiowej<br>
-fjeiwhfe<br>
-jefiojwoei<br>
-fneif</p>
 ]]></content>
     </entry>
 </feed>
