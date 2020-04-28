@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shxiangyan.github.io/</id>
     <title>Shxiangyan&apos;s Home</title>
-    <updated>2020-04-24T07:10:20.117Z</updated>
+    <updated>2020-04-28T15:14:39.497Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shxiangyan.github.io/"/>
     <link rel="self" href="https://shxiangyan.github.io/atom.xml"/>
@@ -10,6 +10,47 @@
     <logo>https://shxiangyan.github.io/images/avatar.png</logo>
     <icon>https://shxiangyan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Shxiangyan&apos;s Home</rights>
+    <entry>
+        <title type="html"><![CDATA[4月28汇报]]></title>
+        <id>https://shxiangyan.github.io/post/4-yue-28-hui-bao/</id>
+        <link href="https://shxiangyan.github.io/post/4-yue-28-hui-bao/">
+        </link>
+        <updated>2020-04-28T15:07:51.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="1人脸识别">1.人脸识别</h2>
+<figure data-type="image" tabindex="1"><img src="https://shxiangyan.github.io//post-images/1588086758980.jpg" alt="" loading="lazy"></figure>
+<p>该人脸识别准确率98%,可用与嵌入式设备.</p>
+<h2 id="2视频分帧">2.视频分帧</h2>
+<h3 id="21分帧提取面部信息">2.1分帧提取面部信息</h3>
+<figure data-type="image" tabindex="2"><img src="https://shxiangyan.github.io//post-images/1588086809805.jpg" alt="" loading="lazy"></figure>
+<h3 id="22分帧提取面部信息">2.2分帧提取面部信息</h3>
+<figure data-type="image" tabindex="3"><img src="https://shxiangyan.github.io//post-images/1588086824969.jpg" alt="" loading="lazy"></figure>
+<h3 id="23特征点比对提取特征训练模型">2.3特征点比对:(提取特征)训练模型</h3>
+<figure data-type="image" tabindex="4"><img src="https://shxiangyan.github.io//post-images/1588086843436.jpg" alt="" loading="lazy"></figure>
+<h3 id="24转换脸部信息未完成">2.4转换脸部信息:(未完成)</h3>
+<h2 id="3yolo-v4">3.YOLO v4</h2>
+<p>目标检测网络模型测试</p>
+<h2 id="4钢管裂纹检测">4.钢管裂纹检测</h2>
+<p>目的:对钢管图像做裂痕检测，应用于工程生成后期检测，根据图像统计信息作出裂痕归类，并给出相应处理信息。</p>
+<p>方法一(深度学习):</p>
+<p>技术:图像特征提取、图像标记、图像区域特征属性</p>
+<figure data-type="image" tabindex="5"><img src="http://hi.csdn.net/attachment/201105/27/0_1306479892788E.gif" alt="" loading="lazy"></figure>
+<p>方法二(opencv):</p>
+<ol>
+<li>图像灰度化</li>
+<li>增加对比度</li>
+<li>Canny边缘检测</li>
+<li>用形态学连接临近裂缝</li>
+<li>找出所有连通域，删除非裂缝噪点区域</li>
+<li>对每个连通域提取骨架，测量长度和宽度</li>
+</ol>
+<figure data-type="image" tabindex="6"><img src="https://img-blog.csdn.net/20180803215201452?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Z1bm55V2hpdGVDYXQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="" loading="lazy"></figure>
+<p>转化为二值图:</p>
+<figure data-type="image" tabindex="7"><img src="https://img-blog.csdn.net/20180803215301658?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Z1bm55V2hpdGVDYXQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="" loading="lazy"></figure>
+<p>高斯滤波:</p>
+<figure data-type="image" tabindex="8"><img src="https://img-blog.csdn.net/20180803215516584?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Z1bm55V2hpdGVDYXQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="" loading="lazy"></figure>
+<p>计算像素位置</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[基于递归卷积神经网络的语音识别研究]]></title>
         <id>https://shxiangyan.github.io/post/speech/</id>
@@ -374,27 +415,6 @@ g_loss_B = g_loss_B_1 + 10*cyc_loss
 </tr>
 </tbody>
 </table>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Bandicam]]></title>
-        <id>https://shxiangyan.github.io/post/bandicam/</id>
-        <link href="https://shxiangyan.github.io/post/bandicam/">
-        </link>
-        <updated>2020-04-01T12:20:11.000Z</updated>
-        <summary type="html"><![CDATA[<p>👉老师您要的录屏软件<br>
-👉👇</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👉老师您要的录屏软件<br>
-👉👇</p>
-<!-- more -->
-<h2 id="1双击bdcamsetupexe">1.双击bdcamsetup.exe</h2>
-<h2 id="2点击下一步">2.点击下一步</h2>
-<h2 id="3可以看到现在是未注册版">3.可以看到现在是未注册版</h2>
-<h2 id="4再次打开之前解压的文件夹以管理员身份运行注册机">4.再次打开之前解压的文件夹，以管理员身份运行注册机</h2>
-<h2 id="5在此随意输入一个邮箱即可">5.在此随意输入一个邮箱即可</h2>
-<h2 id="6输入完毕点击-register-application">6.输入完毕点击 Register application！</h2>
-<h2 id="7重启软件就会发现已经注册成功了">7.重启软件就会发现已经注册成功了</h2>
 ]]></content>
     </entry>
     <entry>
