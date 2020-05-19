@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Shxiangyan&#39;s Home</title>
+<title>5月19汇报 | Shxiangyan&#39;s Home</title>
 <meta name="description" content="shxiangyan@gmail.com">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -15,6 +15,12 @@
 <link rel="stylesheet" href="https://shxiangyan.github.io//styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
@@ -23,6 +29,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://shxiangyan.github.io/">Shxiangyan&#39;s Home</a></h3>
@@ -76,181 +83,65 @@
   </div>
 </nav>
 
-
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
+          <article class="article">
+            <h1>5月19汇报</h1>
+            <p class="article-meta">
+              2020-05-19
+              
+            </p>
+            
+            <div class="post-content">
+              <p>记忆曲线提醒记单词,通过微信公众号推送给用户,一共八个记忆提醒周期,分别是5分钟,30分钟,12小时,1天,2天,4天,7天,15天.</p>
+<!-- more -->
+<h2 id="1初始界面">1.初始界面##</h2>
+<p>数据库使用了关系型数据库,与非关系型数据库两种.mysql的事件操作可以实现定时推送操作.把推送任务放到数据库中的原因是避免Python的全局GIL锁,多线程的使用服务器资源,增加并发量的.因为单词过多会导致数据量大,增删改查负荷过大.数据库采用双表设计,一张表存储全部数据,一张表用于推送数据,到推送时间的数据,插入第二张表.python代码实现扫描第二张表,如果第二张表有数据推送给用户,之后删除在第二张表中推送过的数据,更改第一张表阶段条目,生成推送事件.</p>
+<p>输入单词以后的翻译部分,是通过爬虫得到,并得到读音.为了节约服务器存储资源,读音并不存储,而是,直接利用读音在翻译网站的URL直接访问到,推送给用户,每次输入单词以后都可以得到读音.也就是说,单词可以被多次输入但是并不多次存储,这是因为使用了非关系型数据库,来表示单词是否被存储过.<br>
+<img src="https://shxiangyan.github.io//post-images/1589893570321.jpg" alt="" loading="lazy"></p>
+<h2 id="2查看帮助">2.查看帮助</h2>
+<figure data-type="image" tabindex="1"><img src="https://shxiangyan.github.io//post-images/1589893586141.jpg" alt="" loading="lazy"></figure>
+<h2 id="3插入单词到计划推送">3.插入单词到计划推送##</h2>
+<p>输入两次单词会存储到数据库推送中<br>
+<img src="https://shxiangyan.github.io//post-images/1589893601860.jpg" alt="" loading="lazy"></p>
+<h2 id="4删除">4.删除</h2>
+<p>删除需要删除三项:1,事件.2,mysql总体数据表中数据.3,sqlite数据表中数据<br>
+删除需要用固定的语法:{delete.word}<br>
+<img src="https://shxiangyan.github.io//post-images/1589893612609.jpg" alt="" loading="lazy"></p>
+<h2 id="5听力训练">5.听力训练##</h2>
+<p>有CET-6的听力被我分篇截开,大约一篇2分钟,点击listening按钮以后会随机从服务器挑选一篇,以发送信息发方式发送给用户.<br>
+<img src="https://shxiangyan.github.io//post-images/1589893626370.jpg" alt="" loading="lazy"><br>
+<img src="https://shxiangyan.github.io//post-images/1589893636478.jpg" alt="" loading="lazy"></p>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
           
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://shxiangyan.github.io/post/5-yue-19-hui-bao/">5月19汇报</a>
-    </h2>
-    <p class="article-meta">
-      2020-05-19
-      
-    </p>
-    <p class="text-lead">
-      <p>记忆曲线提醒记单词,通过微信公众号推送给用户,一共八个记忆提醒周期,分别是5分钟,30分钟,12小时,1天,2天,4天,7天,15天.</p>
-
-    </p>
-    <div class="row">
-      <a href="https://shxiangyan.github.io/post/5-yue-19-hui-bao/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://shxiangyan.github.io/post/4-yue-28-hui-bao/">4月28汇报</a>
-    </h2>
-    <p class="article-meta">
-      2020-04-28
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://shxiangyan.github.io/post/4-yue-28-hui-bao/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://shxiangyan.github.io/post/speech/">基于递归卷积神经网络的语音识别研究</a>
-    </h2>
-    <p class="article-meta">
-      2020-04-24
-      
-        <a href="https://shxiangyan.github.io/tag/v1A6vfZG1/" class="badge secondary">
-          Deep learnning
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>🎧🎧🎤🎤</p>
-
-    </p>
-    <div class="row">
-      <a href="https://shxiangyan.github.io/post/speech/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://shxiangyan.github.io/post/gan/">GAN</a>
-    </h2>
-    <p class="article-meta">
-      2020-04-15
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://shxiangyan.github.io/post/gan/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://shxiangyan.github.io/post/fu-wu-qi-pei-zhi/">服务器配置</a>
-    </h2>
-    <p class="article-meta">
-      2020-04-10
-      
-        <a href="https://shxiangyan.github.io/tag/v1A6vfZG1/" class="badge success">
-          Deep learnning
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://shxiangyan.github.io/post/fu-wu-qi-pei-zhi/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://shxiangyan.github.io/post/huawei/">华为开发者会议</a>
-    </h2>
-    <p class="article-meta">
-      2020-03-31
-      
-        <a href="https://shxiangyan.github.io/tag/v1A6vfZG1/" class="badge secondary">
-          Deep learnning
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>👉<br>
-👇</p>
-
-    </p>
-    <div class="row">
-      <a href="https://shxiangyan.github.io/post/huawei/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://shxiangyan.github.io/post/di-wu-zhou/">第五周</a>
-    </h2>
-    <p class="article-meta">
-      2020-03-30
-      
-        <a href="https://shxiangyan.github.io/tag/v1A6vfZG1/" class="badge success">
-          Deep learnning
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://shxiangyan.github.io/post/di-wu-zhou/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://shxiangyan.github.io/post/4-yue-28-hui-bao/">
+                <h3 class="post-title">
+                  4月28汇报
+                </h3>
+              </a>
+            </div>
+          
         </div>
         
-        <div class="row flex-edges">
-  
-  
-</div>
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
 
+          
+        
       </div>
-      
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://shxiangyan.github.io//images/avatar.png?v=1589895208052" class="no-responsive avatar">
@@ -348,7 +239,9 @@
   </div>
 </div>
 
+
     </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script type="application/javascript">
@@ -358,6 +251,29 @@ AOS.init();
 hljs.initHighlightingOnLoad()
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '33872e8e79bd754a763b',
+        clientSecret: 'ce602ba057f352ca3441ab26d7167c83afe263e0',
+        repo: 'shxiangyan.github.io',
+        owner: 'shxiangyan',
+        admin: ['shxiangyan'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

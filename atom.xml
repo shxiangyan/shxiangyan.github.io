@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shxiangyan.github.io/</id>
     <title>Shxiangyan&apos;s Home</title>
-    <updated>2020-04-28T15:19:23.475Z</updated>
+    <updated>2020-05-19T13:34:45.252Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shxiangyan.github.io/"/>
     <link rel="self" href="https://shxiangyan.github.io/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://shxiangyan.github.io/images/avatar.png</logo>
     <icon>https://shxiangyan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Shxiangyan&apos;s Home</rights>
+    <entry>
+        <title type="html"><![CDATA[5月19汇报]]></title>
+        <id>https://shxiangyan.github.io/post/5-yue-19-hui-bao/</id>
+        <link href="https://shxiangyan.github.io/post/5-yue-19-hui-bao/">
+        </link>
+        <updated>2020-05-19T12:58:39.000Z</updated>
+        <summary type="html"><![CDATA[<p>记忆曲线提醒记单词,通过微信公众号推送给用户,一共八个记忆提醒周期,分别是5分钟,30分钟,12小时,1天,2天,4天,7天,15天.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>记忆曲线提醒记单词,通过微信公众号推送给用户,一共八个记忆提醒周期,分别是5分钟,30分钟,12小时,1天,2天,4天,7天,15天.</p>
+<!-- more -->
+<h2 id="1初始界面">1.初始界面##</h2>
+<p>数据库使用了关系型数据库,与非关系型数据库两种.mysql的事件操作可以实现定时推送操作.把推送任务放到数据库中的原因是避免Python的全局GIL锁,多线程的使用服务器资源,增加并发量的.因为单词过多会导致数据量大,增删改查负荷过大.数据库采用双表设计,一张表存储全部数据,一张表用于推送数据,到推送时间的数据,插入第二张表.python代码实现扫描第二张表,如果第二张表有数据推送给用户,之后删除在第二张表中推送过的数据,更改第一张表阶段条目,生成推送事件.</p>
+<p>输入单词以后的翻译部分,是通过爬虫得到,并得到读音.为了节约服务器存储资源,读音并不存储,而是,直接利用读音在翻译网站的URL直接访问到,推送给用户,每次输入单词以后都可以得到读音.也就是说,单词可以被多次输入但是并不多次存储,这是因为使用了非关系型数据库,来表示单词是否被存储过.<br>
+<img src="https://shxiangyan.github.io//post-images/1589893570321.jpg" alt="" loading="lazy"></p>
+<h2 id="2查看帮助">2.查看帮助</h2>
+<figure data-type="image" tabindex="1"><img src="https://shxiangyan.github.io//post-images/1589893586141.jpg" alt="" loading="lazy"></figure>
+<h2 id="3插入单词到计划推送">3.插入单词到计划推送##</h2>
+<p>输入两次单词会存储到数据库推送中<br>
+<img src="https://shxiangyan.github.io//post-images/1589893601860.jpg" alt="" loading="lazy"></p>
+<h2 id="4删除">4.删除</h2>
+<p>删除需要删除三项:1,事件.2,mysql总体数据表中数据.3,sqlite数据表中数据<br>
+删除需要用固定的语法:{delete.word}<br>
+<img src="https://shxiangyan.github.io//post-images/1589893612609.jpg" alt="" loading="lazy"></p>
+<h2 id="5听力训练">5.听力训练##</h2>
+<p>有CET-6的听力被我分篇截开,大约一篇2分钟,点击listening按钮以后会随机从服务器挑选一篇,以发送信息发方式发送给用户.<br>
+<img src="https://shxiangyan.github.io//post-images/1589893626370.jpg" alt="" loading="lazy"><br>
+<img src="https://shxiangyan.github.io//post-images/1589893636478.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[4月28汇报]]></title>
         <id>https://shxiangyan.github.io/post/4-yue-28-hui-bao/</id>
